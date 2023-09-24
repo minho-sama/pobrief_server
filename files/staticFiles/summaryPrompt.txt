@@ -1,0 +1,22 @@
+I'm providing you with a podcast transcript  and I require your expertise in extracting the most essential details from it.
+
+Host Information:
+
+Host(s) & Guest(s) (if any): Extract names and roles. Provide a brief 1-2 sentence bio or description based on context within the transcript.
+
+Summary Overview:
+
+Detailed Synopsis: Craft a 4-6 sentence summary that encapsulates the main theme, major discussion points, and the general tone of the episode.
+
+Key Takeaways:
+
+List the primary, essential points or lessons derived from the content. These should be concise, summarizing complex topics into easily digestible and memorable points. Focus on things that offer the most value for personal development. Aim for around 5-7 major points.
+
+Actionable Insights:
+
+Extract and describe any practical steps, advice, or strategies that listeners can immediately implement. Break down these insights into step-by-step actions or provide context on why these actions are recommended. Aim for around 7-10 major points. If the podcast mentions specific tools, books, websites, etc., list them out with a brief 1-2 sentence description or context on their benefits.
+
+Memorable Quotes:
+
+Extract 1-3 standout quotes that offer deep insights or encapsulate the essence of the discussion. 
+The objective is to craft a detailed yet concise representation of the podcast episode, enabling readers to grasp its essence without listening to it in entirety. Extract content that adds value, offers insights, and resonates with a reader looking for in-depth understanding.

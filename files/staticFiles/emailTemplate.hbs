@@ -1,0 +1,51 @@
+<h1>Your Personal Podcaster</h1>
+{{#each podcasts}}
+  <p>
+    <strong>Title:</strong>
+    {{#if title}}{{title}}{{else}}No Title Provided{{/if}},
+    <strong>Date:</strong>
+    {{#if podcast_created_at}}{{podcast_created_at}}{{else}}No Date Provided{{/if}}
+  </p>
+  <strong>Audio URL:</strong>
+  {{#if audio_url}}{{audio_url}}{{else}}No Audio URL Provided{{/if}}
+  <strong>Image_URL URL:</strong>
+  {{#if image_url}}{{image_url}}{{else}}No Image URL Provided{{/if}}
+  <strong>Publish Date:</strong>
+  {{#if date_published}}{{date_published}}{{else}}No Publish Date Provided{{/if}}
+  <strong>Summary Overview:</strong>
+  {{#if summaryOverview}}
+    <p>{{summaryOverview}}</p>
+  {{else}}
+    No Summary Overview Provided
+  {{/if}}
+  <strong>Actionable Insights</strong>
+  {{#if actionableInsights}}
+    <ul>
+      {{#each actionableInsights}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  {{else}}
+    No Actionable Insights Provided
+  {{/if}}
+  <strong>Key Takeaways</strong>
+  {{#if keyTakeaways}}
+    <ul>
+      {{#each keyTakeaways}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  {{else}}
+    No Key Takeaways Provided
+  {{/if}}
+  <strong>Memorable Quotes</strong>
+  {{#if memorableQuotes}}
+    <ul>
+      {{#each memorableQuotes}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  {{else}}
+    No Memorable Quotes Provided
+  {{/if}}
+{{/each}}

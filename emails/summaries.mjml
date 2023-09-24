@@ -1,0 +1,50 @@
+<mjml>
+  <mj-body>
+    <mj-section>
+      <mj-column>
+        <mj-text>Your Personal Podcaster</mj-text>
+        <mj-text>
+          {{#each podcasts}}
+          <mj-text>Title:</mj-text>
+          {{#if title}}{{title}}{{else}}No Title Provided{{/if}},
+          <mj-text>Date:</mj-text>
+          {{#if podcast_created_at}}{{podcast_created_at}}{{else}}No Date
+          Provided{{/if}}
+        </mj-text>
+        <mj-text>Audio URL:</mj-text>
+        <mj-text>
+          {{#if audio_url}}{{audio_url}}{{else}}No Audio URL Provided{{/if}}
+        </mj-text>
+        <mj-text>Image_URL URL:</mj-text>
+        <mj-text>
+          {{#if image_url}}{{image_url}}{{else}}No Image URL Provided{{/if}}
+        </mj-text>
+        <mj-text>Publish Date:</mj-text>
+        <mj-text>
+          {{#if date_published}}{{date_published}}{{else}}No Publish Date
+          Provided{{/if}}
+        </mj-text>
+        <mj-text>Summary Overview:</mj-text>
+        <mj-text>
+          {{#if summaryOverview}} {{summaryOverview}} {{else}} No Summary
+          Overview Provided {{/if}}
+        </mj-text>
+        <mj-text>Actionable Insights</mj-text>
+        <mj-text>
+          {{#if actionableInsights}} {{#each actionableInsights}} {{this}}
+          {{/each}} {{else}} No Actionable Insights Provided {{/if}}
+        </mj-text>
+        <mj-text>Key Takeaways</mj-text>
+        <mj-text>
+          {{#if keyTakeaways}} {{#each keyTakeaways}} {{this}} {{/each}}
+          {{else}} No Key Takeaways Provided {{/if}}
+        </mj-text>
+        <mj-text>Memorable Quotes</mj-text>
+        <mj-text>
+          {{#if memorableQuotes}} {{#each memorableQuotes}} {{this}} {{/each}}
+          {{else}} No Memorable Quotes Provided {{/if}} {{/each}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
