@@ -10,11 +10,13 @@ const express = require("express");
 require("dotenv").config({ path: require("find-config")(".env") });
 const podcastProcessQueue = require("./podcastQueue.js");
 const processNewPodcastNotification = require("./processNotification.js");
+const cors = require("cors")
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json()); // Middleware to parse JSON request body
+app.use(cors());
 
 // Middleware to verify TADDY Webhook Secret
 const verifyTaddySecret = (req, res, next) => {
