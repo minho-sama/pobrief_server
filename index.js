@@ -34,7 +34,7 @@ const podcastQueue = podcastProcessQueue();
 
 //root URL
 app.get("/", (req, res) => {
-  res.send("Welcome to the Podbrief Webhook Server!");
+  res.status(200).send("Welcome to the Podbrief Webhook Server!");
 });
 
 app.post("/podbrief/processEpisode", verifyTaddySecret, async (req, res) => {
