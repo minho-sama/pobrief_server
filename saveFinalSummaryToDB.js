@@ -15,7 +15,7 @@ async function saveSummaryToDB(finalJson, podcastID) {
         throw error;
       }
   
-      console.log("Database update successful:", data);
+      console.log("Database update successful");
       return data;
     } catch (error) {
       console.error("An error occurred:", error);
