@@ -57,7 +57,7 @@ async function mainPodcastSummarizer(podcastData) {
  
   } finally{
     //delete created files
-    await cleanup()
+    // await cleanup()
   }
 }
 
