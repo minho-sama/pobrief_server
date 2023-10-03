@@ -32,6 +32,11 @@ const verifyTaddySecret = (req, res, next) => {
 //init process QUEUE
 const podcastQueue = podcastProcessQueue();
 
+//root URL
+app.get("/", (req, res) => {
+  res.send("Welcome to the Podbrief Webhook Server!");
+});
+
 app.post("/podbrief/processEpisode", verifyTaddySecret, async (req, res) => {
   const podcastData = req.body.data;
 
